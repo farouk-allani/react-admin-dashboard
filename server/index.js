@@ -11,8 +11,8 @@ import managementRoutes from "./routes/management.js";
 import salesRoutes from "./routes/sales.js";
 
 /* import mocked data */
-import {dataUser} from './data/index.js'
-import User from "./models/User.js";
+// import {dataUser} from './data/index.js'
+// import User from "./models/User.js";
 
 /* CONFIGURATION */
 dotenv.config();
@@ -41,6 +41,6 @@ mongoose
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
     /* insert mocked data once */
-    User.insertMany(dataUser)
+    // User.insertMany(dataUser)
   })
   .catch((error) => console.log(`${error} did not connect`));
