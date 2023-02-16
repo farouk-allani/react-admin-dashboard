@@ -6,7 +6,7 @@ const initialState={
 }
 
 const globalSlice= createSlice({
-    name:'global',
+    name:'global', 
     initialState,
     reducers:{
         setMode:(state)=>{
